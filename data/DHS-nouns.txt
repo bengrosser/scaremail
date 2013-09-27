@@ -1,0 +1,419 @@
+Department of Homeland Security 
+Federal Emergency Management Agency 
+Coast Guard 
+Customs and Border Protection
+Border Patrol
+Secret Service
+National Operations Center
+Homeland Defense
+Immigration Customs Enforcement
+Drug Enforcement Agency
+Federal Bureau of Investigation
+Secure Border Initiative
+Alcohol Tobacco and Firearms
+U.S. Citizenship and Immigration Services
+Federal Air Marshal Service
+Transportation Security Administration
+Central Intelligence Agency
+United Nations
+Federal Aviation Administration
+National Guard
+Red Cross
+Domestic Nuclear Detection Office
+Maritime Domain Awareness
+Disaster Medical Assistance Team
+Center for Disease Control
+Drug Administration
+World Health Organization
+National Biosurveillance Integration Center
+WHO
+CDC
+FDA
+DMAT
+MDA
+FAA
+UN
+CIA
+DHS
+USCG
+FEMA
+CBP
+USSS
+NOC
+ICE
+SBI
+FBI
+DEA
+ATF
+CIS
+FAMS
+TSA
+DNDO 
+WMATA
+BART
+MARTA
+NBIC
+agent
+task force
+air marshal
+fusion center
+assassination
+domestic security
+drill
+exercise
+cops
+law enforcement
+authorities
+disaster assistance
+disaster management
+prevention
+national preparedness
+mitigation
+response
+recovery
+dirty bomb
+domestic nuclear detection
+emergency management
+emergency response
+first responder
+homeland security
+hostage
+national preparedness initiative
+militia
+shooting
+shots fired
+evacuation
+deaths
+explosion 
+explosive
+organized crime
+gangs
+national security
+state of emergency
+security breach
+threat
+standoff
+SWAT
+screening
+bomb squad
+bomb threat
+crash
+looting
+riot
+emergency landing
+pipe bomb
+incident
+facility
+hazmat
+nuclear
+chemical spill
+suspicious package
+suspcious device
+toxic
+national laboratory
+nuclear facility
+nuclear threat
+cloud
+plume
+radiation
+radioactive 
+leak
+biological infection
+biological event
+chemical
+chemical burn
+biological
+epidemic
+hazardous
+hazardous material incident
+industrial spill
+infection powder 
+gas
+spillover
+Anthrax
+blister agent
+chemical agent
+exposure
+burn
+nerve agent
+ricin
+sarin
+North Korea
+outbreak
+contamination
+exposure
+virus
+evacuation
+bacteria
+recall
+Ebola
+food poisoning
+Foot and Mouth
+FMD
+H5N1
+Avian
+flu
+strain
+quarantine
+H1N1
+vaccine
+Salmonella
+Small Pox
+plague
+human to human 
+human to animal
+influenza
+public health
+toxic
+agro terror
+Tuberculosis
+TB
+Tamiflu
+Norvo Virus
+epidemic
+agriculture
+listeria
+symptom
+mutation
+resistant
+antiviral
+wave
+pandemic
+infection
+water borne
+air borne
+sick
+swine
+pork
+Viral Hemorrhagic Fever
+E. Coli
+collapse
+infrastructure security
+airport
+AMTRAK
+collapse
+computer infrastructure
+communications infrastructure
+telecommunications
+critical infrastructure
+national infrastructure
+metro
+airplane
+plane
+chemical fire
+subway
+Port Authority
+transportation security
+grid
+power
+smart
+body scanner
+electric
+failure or outage
+black out
+brown out
+port
+dock
+bridge
+cancelled
+delays
+service disruption
+power lines
+drug cartel
+violence
+gang
+drug
+narcotics
+cocaine
+marijuana
+heroin
+border
+Mexico
+cartel
+southwest
+Juarez
+Sinaloa
+Tijuana
+Torreon
+Yuma
+Tucson
+decapitated
+U.S. Consulate
+consular
+El Paso
+Fort Hancock
+San Diego
+Ciudad Juarez
+Nogales
+Sonora
+Colombia
+mara salvatrucha
+MS13
+MS-13
+drug war
+Mexican army
+methamphetamine
+Cartel de Golfo
+Gulf Cartel
+La Familia
+Reynosa
+Nuevo Leon
+Narcos
+Narco banners
+Los Zetas
+shootout
+execution
+gunfight
+trafficking
+kidnap
+Calderon
+Reyosa
+bust
+Tamaulipas
+meth lab
+drug trade
+illegal immigrants
+smuggling
+smugglers
+Matamoros
+Michoacana
+Guzman
+Arellano-Felix
+Beltran-Leyva
+Barrio Azteca
+Artistic Assassins
+Mexicles
+New Federation
+terrorism
+Al Qaeda
+terror
+attack
+Iraq
+Afghanistan
+Iran
+Pakistan
+agro
+environmental terrorist
+eco terrorism
+conventional weapon
+target
+weapons grade
+dirty bomb
+enriched
+nuclear
+chemical weapon
+biological weapon
+ammonium nitrate
+improvised explosive device
+IED
+Improvised Explosive Device
+Abu Sayyaf
+Hamas
+FARC
+Armed Revolutionary Forces Colombia
+IRA
+Irish Republican Army
+ETA
+Euskadi ta Askatasuna
+Basque Separatists
+Hezbollah
+Tamil Tigers
+PLF
+Palestine Liberation Front
+PLO
+Palestine Liberation Organization
+car bomb
+Jihad
+Taliban
+weapons cache
+suicide bomber
+suicide attack
+suspicious substance
+AQAP
+AL Qaeda Arabian Peninsula
+AQIM
+Al Qaeda in the Islamic Maghreb
+TTP
+Tehrik-i-Taliban Pakistan
+Yemen
+pirates
+extremism
+Somalia
+Nigeria
+radicals
+Al-Shabaab
+home grown
+plot
+nationalist
+recruitment
+fundamentalism
+Islamist
+emergency
+hurricane
+tornado
+twister
+tsunami
+earthquake
+tremor
+flood
+storm
+crest
+temblor
+extreme weather
+forest fire
+brush fire
+ice
+stranded
+stuck
+help
+hail
+wildfire
+Tsunami Warning Center
+magnitude
+avalanche
+typhoon
+Shelter-in-place
+disaster
+snow
+blizzard
+sleet
+mud slide
+mudslide
+erosion
+power outage
+brown out
+warning
+watch
+lightening
+aid
+relief
+closure
+interstate
+burst
+Emergency Broadcast System
+cyber security
+botnet
+DDOS
+dedicated denial of service
+denial of service
+malware
+virus
+trojan
+keylogger
+Cyber Command
+2600
+spammer
+phishing
+rootkit
+phreaking
+cain and abel
+brute forcing
+mysql injection
+cyber attack
+cyber terror
+hacker
+China
+conficker
+worm
+scammers
+social media
