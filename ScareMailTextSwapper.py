@@ -34,8 +34,21 @@
 #  -p                               prints out results
 #
 #
-# Benjamin Grosser
-# 2013
+#
+# Part of the ScareMail Project
+# by Benjamin Grosser
+# http://bengrosser.com
+#
+# Version 1.0 (for Gmail)
+# http://bengrosser.com/projects/scaremail/
+# 
+# Premiere Exhibition:
+# 2013 PRISM Break-Up, Eyebeam, NYC
+# http://prismbreakup.org
+#
+# Many thanks to the PRISM Break-Up team for their support
+# of the project!
+# 
 
 
 from pattern.en import parsetree, pluralize, conjugate, parse, lemma
@@ -97,22 +110,18 @@ def textSwapper(input):
     
     # for each paragraph in the full text
     for pindex,paragraph in enumerate(input):
-        #print "P:"
 
         # split the paragraph up into sentences
         paragraph = st.tokenize(paragraph, realign_boundaries=True)
 
         # for each sentence in the paragraph
         for sentence in paragraph:
-            #print "S:" + sentence
 
             # for all words within a parsed sentence
             for words in parsetree(sentence, replace=replacements):
 
                 #for each word within the sentence
                 for windex,word in enumerate(words):
-                    #print word.string + ":" + word.tag
-                    #stdout.write(word.string)
 
                     # ---------------------------------------
                     # swap the nouns and verbs!
@@ -176,7 +185,6 @@ def textSwapper(input):
                             else:
                                 newword = conjugate(choice(verbs), word.tag)
 
-                            #print "OLD: "+word.string+", NEW: "+newword
                         else:        
                             newword = conjugate(lemma(newverb), word.tag)
 
@@ -200,73 +208,56 @@ def textSwapper(input):
                             openquote = True
                             qindex = windex
                             qpindex = pindex
-                            #result = result + word.string
                             result = result + newword
 
                         # otherwise, append and keep going
                         else:
                             openquote = False
-                            #result = result + word.string
                             result = result + newword
 
-                        #stdout.write(" CASE1 -- windex = 0")
 
                     # if the sentence started with a quote in this 
                     # paragraph and this is the second character of
                     # the sentence, write it (and capitalize it)
                     elif windex == 1 and qindex == 0 and\
                         qpindex == pindex and openquote:
-                        #result = result + word.string.capitalize()
                         result = result + newword.capitalize()
-                        #stdout.write(" CASE2")
 
                     # if this is after an open quote within a sentence
                     # (but not at the start of it)
                     elif windex == qindex+1 and qpindex == pindex and openquote:
-                        #result = result + word.string
                         result = result + newword
-                        #stdout.write(" CASE2a")
 
                     # if this is the first word of the sentence
                     # no space and capitalize() (in case it isn't already)
                     elif windex == 0:
-                        #result = result + word.string.capitalize()
                         result = result + newword.capitalize()
-                        #stdout.write(" CASE3 -- windex = 0")
 
                     # if this is punctuation 
                     elif search('[.,?!\"\'\\n;:]',word.string) and len(word.string) == 1:
                         # if this is a closing quote
                         if search('"',word.string) and openquote:
                             openquote = False
-                            #result = result + word.string
                             result = result + newword
-                            #stdout.write(" CASE4a")
 
 
                         # or if this is an opening quote
                         elif search('"',word.string) and not openquote:
-                            #result = result + ' ' + word.string
                             result = result + ' ' + newword
                             openquote = True
                             qindex = windex
                             qpindex = pindex
-                            #stdout.write(" CASE4b")
 
                         # else it's some other punctuation and it just
                         # gets written out
                         else:
-                            #result = result + word.string
                             result = result + newword
-                            #stdout.write(" CASE4c")
 
 
                     # else it's just a word in the middle of a sentence,
                     # so it gets written with a preceeding space
                     else:
-                        #result = result + ' ' + word.string
                         result = result + ' ' + newword
-                        #stdout.write(" CASE5")
 
                     # reset word index
                     windex = 0
