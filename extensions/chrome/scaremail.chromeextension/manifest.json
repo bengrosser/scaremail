@@ -1,6 +1,6 @@
 {
     "name": "ScareMail",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Makes email \"scary\" in order to disrupt NSA surveillance",
     "homepage_url": "http://bengrosser.com/projects/scaremail/",
     "manifest_version": 2,
