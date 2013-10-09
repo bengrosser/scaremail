@@ -11,7 +11,7 @@ This project premiered at [PRISM Breakup](http://prismbreakup.org), a series of 
 
 ### Installation
 
-If you're just looking to install ScareMail, please visit the [installation page](http://bengrosser.com/projects/scaremail/install/).
+If you're just looking to install ScareMail, please visit the [installation page](http://bengrosser.com/projects/scaremail/install-scaremail/).
 
 
 ### Files
