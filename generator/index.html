@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScareMail Generator</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript" src="scaremail-generator.js"></script>
+
+
+<style type="text/css">
+#textblock {
+  background-color:#eee;
+  font-family:Helvetica;
+}
+#generatedtext {
+  width:550px;
+  height:550px;
+  overflow:auto;
+  border:1px solid black;
+  padding:10px;
+}
+
+#generator { width:550px; margin:0 auto; }
+#generatorcontrols { float:left; width:300px; margin-bottom:10px; }
+#generatorcontrols button { float:left; }
+#wordcount { width:100%; float:left; margin-bottom:10px;}
+#wordcount label, #wordcount input { float:left; }
+#wordcount label { padding:2px 5px 0 0; }
+#generatedtext { border:1px solid #ddd;background-color:white; font-family:Helvetica; font-size:12px;}
+#numwords { width:40px;float:left; }
+body { background-color:#eee; font-family:"Lucida Grande";font-size:90%;}
+.numwarning { display:none;color:red; margin:3px 0 0 10px; float:left;}
+#textnotes { float:left;padding:5px 0;display:none; }
+.textnote { color:#888; font-size:85%; }
+</style>
+
+  </head>
+
+  <body>
+
+
+    <div id="generator">
+
+      <div id="generatorcontrols">
+        <button id="smbutton" type="button">Generate ScareMail Text</button>
+      </div>
+
+      <div id="wordcount">
+        <label for="numwords">Number of words to generate:</label>
+        <input id="numwords" type="text" value="500">
+        <span class="numwarning">(max is 40000)</span>
+
+      </div>
+
+      <div id="textblock">
+        <div id="generatedtext" contenteditable="true"></div>
+      </div>
+
+      <div id="textnotes">
+        <span class="textnote">Click generated text to select, then use copy/paste to grab it</span>
+      </div>
+
+      <script type="text/javascript">
+        var MAX_NUMWORDS = 40000;
+
+        $('#smbutton').click(function() {
+            if($('#numwords').val() > MAX_NUMWORDS) {
+                $('#numwords').val(MAX_NUMWORDS);
+                $('.numwarning').show();
+            } else if($('#numwords').val() <= MAX_NUMWORDS) {
+                $('.numwarning').hide();
+            }
+
+
+            $('#generatedtext').html(
+            getScaryStory($('#numwords').val()).replace(/<br><br>/g,'</p><p>')
+            +'</p>');
+            $('#textnotes').show();
+        });
+
+        $('#numwords').keyup(function(e) {
+            if (e.keyCode == 13) {
+                $('#smbutton').click();
+            }
+        });
+
+        $("#textblock").click(function() {
+          SelectText('generatedtext');
+        });
+
+        /* from Jason@stackoverflow http://stackoverflow.com/a/987376/348496  */
+        function SelectText(element) {
+            var doc = document
+                , text = doc.getElementById(element)
+                , range, selection
+            ;    
+            if (doc.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(text);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();        
+                range = document.createRange();
+                range.selectNodeContents(text);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+        }
+
+      </script>
+
+    </body>
+
+</html>
